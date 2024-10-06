@@ -4,7 +4,7 @@ function Weather() {
   const [forcast, setForcast] = useState();
 
 const API_URL=""
-
+CONST API_KEY=""
 
   return <>
 
