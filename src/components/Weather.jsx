@@ -36,7 +36,6 @@ function Weather() {
           </p>
         </div>
 
-        {/* Search Section */}
         <div className="mt-6 bg-blue-700 rounded-3xl p-6 shadow-lg">
           <form
             onSubmit={handleSearchButton}
@@ -55,7 +54,6 @@ function Weather() {
             </Button>
           </form>
 
-          {/* Weather Info Section */}
           {getWeather && (
             <div className="mt-8 text-white text-center">
               <h2 className="text-4xl font-bold">{getWeather.city}</h2>
