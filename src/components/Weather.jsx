@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 
 function Weather() {
@@ -37,12 +37,12 @@ function Weather() {
         <TextField
           id="standard-basic"
           label="Standard"
-          variant="standard"
+          variant="outlined"
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
 
-        <button>Submit</button>
+        <Button variant="contained">Submit</Button>
       </form>
     </>
   );
