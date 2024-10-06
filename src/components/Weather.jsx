@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useState } from "react";
 
 function Weather() {
-  return (
-    <></>
-  )
+  const [] = useState();
+  return <></>;
 }
 
-export default Weather
+export default Weather;
