@@ -1,3 +1,4 @@
+import { TextField } from "@mui/material";
 import React, { useState } from "react";
 
 function Weather() {
@@ -19,7 +20,6 @@ function Weather() {
       humidity: jsonResponse.main.humidity,
       tempMax: jsonResponse.main.temp_max,
       tempMin: jsonResponse.main.temp_min,
-      
     };
     console.log(result);
   };
@@ -34,12 +34,14 @@ function Weather() {
   return (
     <>
       <form action="" onSubmit={handleSearchButton}>
-        <input
-          type="text"
-          placeholder="Enter city..."
+        <TextField
+          id="standard-basic"
+          label="Standard"
+          variant="standard"
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
+
         <button>Submit</button>
       </form>
     </>
