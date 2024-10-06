@@ -6,12 +6,17 @@ function Weather() {
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
   // "https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}";
   const API_KEY = "fc694d073c1f046f4ab5e5c37fedcdc4";
-  let getWeatherInfo =async () => {
-      let response = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}`);
-      let jsonResponse = await response.json();
-      console.log(jsonResponse);
+  let getWeatherInfo = async () => {
+    let response = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}`);
+    let jsonResponse = await response.json();
+    console.log(jsonResponse);
     // getWeatherData();
     // console.log(API_KEY)
+
+    let result = {
+      temp: jsonResponse.main.temp,
+    };
+    console.log(result);
   };
   // console.log(city);
 
