@@ -12,15 +12,25 @@ function Weather() {
   // };
   // getWeatherData();
   // console.log(API_KEY)
-  console.log(city)
+  console.log(city);
+
+  let handleSearchButton = (e) => {
+    e.preventDefault();
+    setCity("");
+  };
+
   return (
     <>
+    <form action="" onSubmit={handleSearchButton}>
+
       <input
         type="text"
         placeholder="Enter city..."
         value={city}
         onChange={(e) => setCity(e.target.value)}
       />
+      <button >Submit</button>
+    </form>
     </>
   );
 }
