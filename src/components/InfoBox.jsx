@@ -5,6 +5,7 @@ function InfoBox({ weatherInfo }) {
     <>
       {/* Weather Info Section */}
       {weatherInfo && (
+        <div className="mt-6 bg-blue-600 border-white border-2 rounded-3xl p-6 shadow-lg">
         <div className="mt-8 text-white text-center">
           <h2 className="text-4xl font-bold">{weatherInfo.city}</h2>
           <div className="text-6xl mt-4">
@@ -17,6 +18,7 @@ function InfoBox({ weatherInfo }) {
           <p className="text-blue-300 mt-2">
             Humidity: {weatherInfo.humidity}%
           </p>
+        </div>
         </div>
       )}
     </>

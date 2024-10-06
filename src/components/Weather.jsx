@@ -31,11 +31,6 @@ function Weather() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-blue-100 p-6">
       <div className="w-full max-w-sm">
-        <div className="bg-blue-800 p-6 rounded-3xl shadow-lg">
-          <p className="text-blue-200 text-center mt-2">
-            Get real-time weather updates for your location.
-          </p>
-        </div>
 
         {/* Search Section */}
         <div className="mt-6 bg-blue-600 rounded-3xl p-6 shadow-lg">
@@ -55,8 +50,8 @@ function Weather() {
               Get Weather
             </Button>
           </form>
-        </div>
         <InfoBox weatherInfo={getWeather} />
+        </div>
         {/* Footer Section */}
         <div className="mt-6 text-center">
           <p className="text-black font-semibold">
