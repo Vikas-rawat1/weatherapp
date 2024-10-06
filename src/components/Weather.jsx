@@ -47,7 +47,6 @@ function Weather() {
               label="Enter City"
               variant="outlined"
               value={city}
-              placeholder={city}
               onChange={(e) => setCity(e.target.value)}
               className="bg-white rounded-md w-full"
             />
