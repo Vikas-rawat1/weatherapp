@@ -19,10 +19,10 @@ function Weather() {
       humidity: jsonResponse.main.humidity,
       tempMax: jsonResponse.main.temp_max,
       tempMin: jsonResponse.main.temp_min,
-      description:jsonResponse.weather[0].description,
-      img: jsonResponse.main.icon,
+      description: jsonResponse.weather[0].description,
+      // img: jsonResponse.main.icon,
     };
-    console.log(result)
+    console.log(result);
     setGetWeather(result);
   };
 
