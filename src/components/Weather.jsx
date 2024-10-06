@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 function Weather() {
   const [city, setCity] = useState("");
+  const [getWeather, setGetWeather] = useState();
 
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
   // "https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}";
@@ -21,7 +22,8 @@ function Weather() {
       tempMax: jsonResponse.main.temp_max,
       tempMin: jsonResponse.main.temp_min,
     };
-    console.log(result);
+    // console.log(result);
+    setGetWeather(result);
   };
   // console.log(city);
 
@@ -42,8 +44,11 @@ function Weather() {
           onChange={(e) => setCity(e.target.value)}
         />
 
-        <Button variant="contained" type="submit">Submit</Button>
+        <Button variant="contained" type="submit">
+          Submit
+        </Button>
       </form>
+      {getWeather && <p>{getWeather.city}</p>}{" "}
     </>
   );
 }
