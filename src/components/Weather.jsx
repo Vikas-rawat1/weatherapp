@@ -8,8 +8,9 @@ function Weather() {
   let getWeatherData = async () => {
     let respone = await fetch(`${API_URL}?q=${city}`);
     let jsonResponse = await respone.json();
-    console.log(jsonResponse)
+    console.log(jsonResponse);
   };
+  getWeatherData();
   // console.log(API_KEY)
   return <></>;
 }
