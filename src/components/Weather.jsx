@@ -42,7 +42,7 @@ function Weather() {
           onChange={(e) => setCity(e.target.value)}
         />
 
-        <Button variant="contained">Submit</Button>
+        <Button variant="contained" type="submit">Submit</Button>
       </form>
     </>
   );
