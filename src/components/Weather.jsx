@@ -14,7 +14,12 @@ function Weather() {
     // console.log(API_KEY)
 
     let result = {
+      city: jsonResponse.name,
       temp: jsonResponse.main.temp,
+      humidity: jsonResponse.main.humidity,
+      tempMax: jsonResponse.main.temp_max,
+      tempMin: jsonResponse.main.temp_min,
+      
     };
     console.log(result);
   };
