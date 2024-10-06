@@ -56,7 +56,7 @@ function Weather() {
             </Button>
           </form>
         </div>
-        <InfoBox weatherInfo={weather} />
+        <InfoBox weatherInfo={getWeather} />
         {/* Footer Section */}
         <div className="mt-6 text-center">
           <p className="text-black font-semibold">
