@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function Weather() {
-  const [] = useState();
+  const [forcast ,setForcast] = useState();
   return <></>;
 }
 
