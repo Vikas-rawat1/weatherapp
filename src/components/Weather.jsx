@@ -37,7 +37,7 @@ function Weather() {
         </div>
 
         {/* Search Section */}
-        <div className="mt-6 bg-blue-700 rounded-3xl p-6 shadow-lg">
+        <div className="mt-6 bg-blue-600 rounded-3xl p-6 shadow-lg">
           <form
             onSubmit={handleSearchButton}
             className="flex flex-col items-center space-y-4"
@@ -75,7 +75,7 @@ function Weather() {
 
         {/* Footer Section */}
         <div className="mt-6 text-center">
-          <p className="text-blue-200">
+          <p className="text-black font-semibold">
             Get detailed weather reports instantly
           </p>
         </div>
