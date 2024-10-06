@@ -5,8 +5,8 @@ function InfoBox({ weatherInfo }) {
     <>
       {/* Weather Info Section */}
       {weatherInfo && (
-        <div className="mt-6 bg-blue-600 border-white border-2 rounded-3xl p-6 shadow-lg">
-          <div className="mt-8 text-white text-center">
+        <div className="mt-4 bg-blue-600 border-white border-2 rounded-3xl p-6 shadow-lg">
+          <div className="mt-1 text-white text-center">
             <h2 className="text-4xl font-bold">{weatherInfo.city}</h2>
             <div className="text-6xl mt-4">
               {Math.round(weatherInfo.temp - 273.15)}°C

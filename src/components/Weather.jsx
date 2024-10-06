@@ -35,8 +35,8 @@ function Weather() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-blue-100 p-6">
       <div className="w-full max-w-sm">
-        <div className="bg-blue-800 p-6 rounded-3xl shadow-lg">
-          <p className="text-blue-200 text-center mt-2">
+        <div className="bg-blue-800 p-5 rounded-3xl shadow-lg">
+          <p className="text-blue-200 text-center">
             Get real-time weather updates for your location.
           </p>
         </div>
@@ -55,7 +55,7 @@ function Weather() {
               onChange={(e) => setCity(e.target.value)}
               className="bg-white rounded-md w-full"
             />
-            <Button variant="contained" type="submit" className="w-full">
+            <Button variant="contained" type="submit" className="w-40">
               Get Weather
             </Button>
           </form>
