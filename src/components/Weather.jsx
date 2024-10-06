@@ -12,13 +12,17 @@ function Weather() {
   let getWeatherInfo = async () => {
     let response = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}`);
     let jsonResponse = await response.json();
+    console.log(jsonResponse);
     let result = {
       city: jsonResponse.name,
       temp: jsonResponse.main.temp,
       humidity: jsonResponse.main.humidity,
       tempMax: jsonResponse.main.temp_max,
       tempMin: jsonResponse.main.temp_min,
+      description:jsonResponse.weather[0].description,
+      img: jsonResponse.main.icon,
     };
+    console.log(result)
     setGetWeather(result);
   };
 
