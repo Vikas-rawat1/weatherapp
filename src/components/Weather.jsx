@@ -33,7 +33,7 @@ function Weather() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-blue-100 p-6">
+    <div className="flex items-center justify-center min-h-screen bg-blue-200 p-6">
       <div className="w-full max-w-sm">
         <div className="bg-blue-800 p-5 rounded-3xl shadow-lg">
           <p className="text-blue-200 text-center">
