@@ -21,16 +21,15 @@ function Weather() {
 
   return (
     <>
-    <form action="" onSubmit={handleSearchButton}>
-
-      <input
-        type="text"
-        placeholder="Enter city..."
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-      />
-      <button >Submit</button>
-    </form>
+      <form action="" onSubmit={handleSearchButton}>
+        <input
+          type="text"
+          placeholder="Enter city..."
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+        />
+        <button>Submit</button>
+      </form>
     </>
   );
 }
