@@ -6,7 +6,7 @@ function App() {
     <> 
       <Weather/> 
     </>
-  ) 
+  )
 } 
 
 export default App
